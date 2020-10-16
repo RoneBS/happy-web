@@ -1,15 +1,14 @@
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
-import { Link } from 'react-router-dom'
 
-import '../styles/pages/landing.css';
+import { Container, Wrapper, Location , ButtonIndex} from './styles'
 
-import logoImg from '../images/logo.svg';
+import logoImg from '../../images/logo.svg';
 
 function Landing() {
   return (
-    <div id="page-landing">
-      <div className="content-wrapper">
+    <Container>
+      <Wrapper>
         <img src={logoImg} alt="Happy" />
 
         <main>
@@ -17,16 +16,16 @@ function Landing() {
           <p>Visite orfanatos e mude o dia de muitas crianças.</p>
         </main>
 
-        <div className="location">
+        <Location>
           <strong>Várzea Alegre</strong>
           <span>Ceará</span>
-        </div>
+        </Location>
 
-        <Link to="/app" className="enter-app">
+        <ButtonIndex to="/app">
           <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
-        </Link>
-      </div>
-    </div>
+        </ButtonIndex>
+      </Wrapper>
+    </Container>
   );
 }
 
