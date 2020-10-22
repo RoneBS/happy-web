@@ -5,8 +5,6 @@ import  Checkbox  from '../../components/Checkbox';
 import { BoxButton, ButtonBack, MainPage, Location, Logo, LoginBox, LinkBox, FormLogin } from '../Login/styles';
 import { FiArrowLeft } from "react-icons/fi";
 
-import '../../styles/pages/orphanage-login.css';
-
 import landingImg from '../../images/logotipo.svg';
 
 function Login() {

@@ -41,19 +41,57 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const ContainerImg = styled.div`
+  display: flex;
+`;
+
+
 export const Location = styled.div`
-  position: absolute;
-  right: 0;
-  top: 0;
   font-size: 24px;
   line-height: 34px;
   display: flex;
+  margin-left: 64px;  
   flex-direction: column;
-  text-align: right;
+  text-align: left;
 
   strong {
     font-weight: 800;
   }
+
+`;
+
+export const Acces = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
+  display:flex;
+  flex-direction: column;
+`;
+
+export const Login = styled(Link)`
+
+      
+      width: 222px;
+      height: 56px;
+      
+      border-radius: 20px;
+      border: 0;
+      background: #12D4E0;
+      color: #FFF;
+      text-decoration: none;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background: #96FEFF;
+        color: #15C3D6
+      }
+
+    
+
 `;
 
 export const ButtonIndex = styled(Link)`
